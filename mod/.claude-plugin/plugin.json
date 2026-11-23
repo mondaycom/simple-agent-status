@@ -1,0 +1,6 @@
+{
+  "name": "tool-status",
+  "version": "0.1.2",
+  "description": "Replaces the spinner's random word with what the agent is actually doing",
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "tool-status-mod",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "claude plugin test .",
+    "typecheck": "tsc -p .",
+    "validate": "claude plugin validate ."
+  },
+  "devDependencies": {
+    "tool-call-status": "workspace:*"
+  }
+}

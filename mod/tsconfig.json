@@ -1,0 +1,5 @@
+{
+  "extends": "../tsconfig.base.json",
+  // .claude-plugin/types is written by Claude Code once it loads the mod
+  "include": ["src", "test", "types", ".claude-plugin/types/**/*.d.ts"]
+}

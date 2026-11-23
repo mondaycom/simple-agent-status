@@ -1,0 +1,28 @@
+{
+  "name": "tool-call-status",
+  "version": "0.1.0",
+  "description": "Turn an AI agent's tool call into a 1-2 word status, like \"bash npm install\" → \"installing dependencies\"",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mondaycom/simple-agent-status.git",
+    "directory": "packages/tool-call-status"
+  },
+  "keywords": ["claude", "claude-code", "agent", "status", "spinner"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest run",
+    "bench": "vitest bench --run --reporter=verbose",
+    "typecheck": "tsc -p .",
+    "prepublishOnly": "pnpm build && pnpm test"
+  }
+}
